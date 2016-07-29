@@ -23,7 +23,7 @@ public class Application {
         if(a == null) {
             return b;
         }
-        return true;
+        return null;
     }
 
     public static void main(String[] args) {

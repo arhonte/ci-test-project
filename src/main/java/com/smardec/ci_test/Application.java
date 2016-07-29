@@ -20,7 +20,7 @@ public class Application {
     }
 
     public Boolean doBoolean(Boolean a, Boolean b){
-        return false;
+        return true;
     }
 
     public static void main(String[] args) {

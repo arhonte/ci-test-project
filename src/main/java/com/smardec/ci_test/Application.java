@@ -19,13 +19,13 @@ public class Application {
         //return a == null ? b: (b == null ? a : a + b);
     }
 
-    public Boolean doBoolean(Boolean a, Boolean b){
+    public Boolean doOrBoolean(Boolean a, Boolean b){
         if(a == null) {
             return b;
         } else if(b == a) {
             return a;
         }
-        return null;
+        return a || b;
     }
 
     public static void main(String[] args) {

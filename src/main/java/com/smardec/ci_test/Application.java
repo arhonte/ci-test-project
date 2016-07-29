@@ -9,7 +9,7 @@ public class Application {
         System.out.println("Application.doVoid");
     }
 
-    public Integer sum(Integer a, Integer b){
+    public Integer doSum(Integer a, Integer b){
         if(a == null) {
             return b;
         } else if(b == null) {
@@ -19,12 +19,16 @@ public class Application {
         //return a == null ? b: (b == null ? a : a + b);
     }
 
+    public Boolean doBoolean(Boolean a, Boolean b){
+        return false;
+    }
+
     public static void main(String[] args) {
         System.out.println("Application.main");
 
         Application app = new Application();
         app.doVoid();
 
-        System.out.println("Result: " + app.sum(12, 21));
+        System.out.println("Result: " + app.doSum(12, 21));
     }
 }

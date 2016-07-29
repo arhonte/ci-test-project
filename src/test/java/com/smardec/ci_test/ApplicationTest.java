@@ -19,9 +19,9 @@ public class ApplicationTest {
     public void testSum(){
         Application app = new Application();
 
-        Assert.assertNull(app.sum(null, null));
-        Assert.assertEquals(new Integer(12), app.sum(12, null));
-        Assert.assertEquals(new Integer(21), app.sum(null, 21));
-        Assert.assertEquals(new Integer(33), app.sum(12, 21));
+        Assert.assertNull(app.doSum(null, null));
+        Assert.assertEquals(new Integer(12), app.doSum(12, null));
+        Assert.assertEquals(new Integer(21), app.doSum(null, 21));
+        Assert.assertEquals(new Integer(33), app.doSum(12, 21));
     }
 }

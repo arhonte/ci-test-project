@@ -22,14 +22,14 @@ public class Application {
     public Boolean doOrBoolean(Boolean a, Boolean b){
         if(a == null) {
             return b;
-        } else if(b == a) {
+        } else if(b == null) {
             return a;
         }
         return a || b;
     }
 
     public static void main(String[] args) {
-        System.out.println("Application.main");
+        System.out.println("Application.main()");
 
         Application app = new Application();
         app.doVoid();

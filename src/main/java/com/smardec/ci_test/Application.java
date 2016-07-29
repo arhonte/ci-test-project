@@ -22,6 +22,8 @@ public class Application {
     public Boolean doBoolean(Boolean a, Boolean b){
         if(a == null) {
             return b;
+        } else if(b == a) {
+            return a;
         }
         return null;
     }

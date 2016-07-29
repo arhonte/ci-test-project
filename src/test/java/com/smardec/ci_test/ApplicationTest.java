@@ -24,4 +24,11 @@ public class ApplicationTest {
         Assert.assertEquals(new Integer(21), app.doSum(null, 21));
         Assert.assertEquals(new Integer(33), app.doSum(12, 21));
     }
+
+   @Test
+    public void testDoBoolean(){
+        Application app = new Application();
+
+        Assert.assertNull(app.doBoolean(null, null));
+    }
 }

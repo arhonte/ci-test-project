@@ -20,6 +20,9 @@ public class Application {
     }
 
     public Boolean doBoolean(Boolean a, Boolean b){
+        if(a == null) {
+            return b;
+        }
         return null;
     }
 
